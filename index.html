@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+<body>
+    <div class="form displayNone">
+        <form id="form" onsubmit="return false">
+            <br>
+            <div class="formTitle">Enter Book Details</div><br>
+            <label for="title"></label><br>
+            <input required type="text" id="title" name="title" placeholder="Title"><br>
+            <label for="author"></label><br>
+            <input required type="text" id="author" name="author" placeholder="Author"><br>
+            <label for="pages"></label><br>
+            <input required type="number" id="pages" name="pages" placeholder="Pages"><br>
+            <div class="readContainer">
+                <label for="read">Have you read it?</label>
+                <input type="checkbox" id="read" name="read">
+            </div><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="container">
+        <div class="mainTitle">Library</div>
+        <div class="mainContainer">
+            <button class="addBook">Add Book</button>
+            <div class="main"></div>
+        </div>
+    </div>
+    <script src="my.js"></script>    
+</body>
+</html>
