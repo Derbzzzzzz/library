@@ -17,12 +17,12 @@
             <label for="author"></label><br>
             <input required type="text" id="author" name="author" placeholder="Author"><br>
             <label for="pages"></label><br>
-            <input required type="number" id="pages" name="pages" placeholder="Pages"><br>
+            <input required min="1" type="number" id="pages" name="pages" placeholder="Pages"><br>
             <div class="readContainer">
                 <label for="read">Have you read it?</label>
                 <input type="checkbox" id="read" name="read">
             </div><br>
-            <input type="submit" value="Submit">
+            <input type="submit" id="submit" value="Validate">
         </form>
     </div>
     <div class="container">

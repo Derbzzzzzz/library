@@ -91,7 +91,8 @@ form{
     left: 50%;
     margin-top: 10vh;
     margin-left: -25%;
-    height: 500px;
+    padding: 10px;
+    /* height: 500px; */
 
     display: flex;
     flex-direction: column;
@@ -110,11 +111,14 @@ form{
 }
 
 .formTitle{
+    text-align: center;
+    padding: 5px;
     font-size: 30px;
     font-weight: bolder;
 }
 
 input{
+    padding: 10px;
     font-size: larger;
     width: 80%;
     height: 10%;
@@ -123,7 +127,19 @@ input{
 }
 
 input:focus{
-    outline-style: solid;
+    outline-style: none;
+}
+
+input:invalid{
+    border: red 2px solid;
+}
+
+input:valid{
+    border: black 2px solid;
+}
+
+#submit{
+    border: black 2px solid;
 }
 
 
